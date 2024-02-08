@@ -1,0 +1,24 @@
+@import url('./header.css');
+@import url('./nav.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --shadow: #464646;
+    --white: #fff;
+    --blue: #0f2182;
+    --light-blue: #304ffe;
+    --background: #f1f1f1;
+    --black: #000;
+}
+
+body {
+    background: var(--background);
+}
