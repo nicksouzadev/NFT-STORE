@@ -1,0 +1,60 @@
+main {
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .left {
+    width: 700px;
+}
+
+main .left h1 {
+    font-size: 80px;
+}
+
+main .left h1 span {
+    background-image: url(/assets/ctff.gif);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+main .left p {
+    margin: 40px 0;
+    color: var(--copyright);
+}
+
+main .left a {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    width: 200px;
+    padding: 8px;
+    border-radius: 60px;
+    transition: all 0.4s;
+}
+
+main .left a i {
+    background: var(--white);
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+main .left a:hover {
+    transform: translateY(-5px);
+    background: var(--blue);
+}
+
+main .left a span {
+    color: var(--white);
+    margin-left: 10px;
+}
+
+main img {
+    width: 400px;
+}

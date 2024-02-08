@@ -1,14 +1,11 @@
 @import url('./header.css');
 @import url('./nav.css');
+@import url('./media.css');
+@import url('./footer.css');
+@import url('./bestsellers.css');
+@import url('./main.css');
+@import url('./nft__shop.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Ubuntu', sans-serif;
-}
 
 :root {
     --shadow: #464646;
@@ -17,6 +14,26 @@
     --light-blue: #304ffe;
     --background: #f1f1f1;
     --black: #000;
+    --footer-letter: #989898;
+    --copyright: #777;
+    --category: #dfdcdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+img {
+    object-fit: cover;
 }
 
 body {
