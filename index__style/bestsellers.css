@@ -35,7 +35,11 @@
 
 @media screen and (max-width: 768px) {
     .sellers {
+        padding: 0 40px;
         flex-direction: column;
-        width: 1200px;
-    }       
+    }   
+    
+    .sellers .item {
+        width: calc(50% - 22px);
+    }
 }
