@@ -154,3 +154,31 @@ h2.separator {
     color: var(--white);
     background: var(--blue);
 }
+
+@media screen and (max-width: 768px) {
+    h2.separator {
+        padding: 0 40px;
+    }
+
+    .sell-nft {
+        padding: 0 40px;
+        flex-direction: column;
+    }
+
+    .nft-shop {
+        padding: 0 40px;
+    }
+
+    .nft-list {
+        flex-direction: column;
+    }
+
+    .nft-list .item img {
+        transform: translateX(70px);
+    }
+
+    .nft-list .item .info h5 {
+        transform: translateX(90px);
+    }
+    
+}

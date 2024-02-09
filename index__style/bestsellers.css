@@ -32,3 +32,10 @@
     font-size: 14px;
     margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+    .sellers {
+        flex-direction: column;
+        width: 1200px;
+    }       
+}

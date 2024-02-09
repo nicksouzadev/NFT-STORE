@@ -1,11 +1,8 @@
-@import url('./header.css');
-@import url('./nav.css');
-@import url('./media.css');
-@import url('./footer.css');
-@import url('./bestsellers.css');
-@import url('./main.css');
-@import url('./nft__shop.css');
-
+@import url(/index__style/header.css);
+@import url(/index__style/bestsellers.css);
+@import url(/index__style/footer.css);
+@import url(/index__style/main.css);
+@import url(/index__style/nft__shop.css);
 
 :root {
     --shadow: #464646;
