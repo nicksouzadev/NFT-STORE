@@ -50,3 +50,11 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/button/close.svg";
     }
 }
+
+document.getElementById("comprar").addEventListener("click", function () {
+    window.location.href = "./index__pages/comprar.html";
+});
+
+document.getElementById("comprar-mb").addEventListener("click", function () {
+    window.location.href = "./index__pages/comprar.html";
+});
