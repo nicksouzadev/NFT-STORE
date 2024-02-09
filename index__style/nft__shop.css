@@ -162,23 +162,36 @@ h2.separator {
 
     .sell-nft {
         padding: 0 40px;
+        margin: 50px 0 80px;
         flex-direction: column;
+        align-items: center;gap: 30px;
+    }
+
+    .sell-nft .item, .nft-shop .nft-list .item {
+        width: 100%; 
     }
 
     .nft-shop {
         padding: 0 40px;
     }
 
-    .nft-list {
+    .nft-shop .nft-list {
         flex-direction: column;
+        gap: 20px;
     }
 
     .nft-list .item img {
-        transform: translateX(70px);
+        width: 100%;
+        height: auto;
+    }
+
+    .nft-shop .nft-list .item{
+        padding: 12px 40px;
     }
 
     .nft-list .item .info h5 {
-        transform: translateX(90px);
+        margin-top: 10px;
+        text-align: center;
     }
     
 }

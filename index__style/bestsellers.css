@@ -40,6 +40,6 @@
     }   
     
     .sellers .item {
-        width: calc(50% - 22px);
+        width: 100%;
     }
 }
