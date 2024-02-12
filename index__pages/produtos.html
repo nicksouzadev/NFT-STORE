@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- fav icon na tela superior do site -->
-    <link rel="icon" type="image/png" href="./assets/fav-icon.png">
+    <link rel="icon" type="image/png" href="../assets/fav-icon.png">
 
     <!-- conectando a fonte com o google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- importando a estilização do site -->
-    <link rel="stylesheet" href="./index__style/global.css">
+    <link rel="stylesheet" href="../index__style/global.css">
+    <link rel="stylesheet" href="./pages__style/produtos.css">
 
     <!-- conectando às bibliotecas -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- importando o javascript -->
-    <script defer src="./index__js/global.js"></script>
+    <script defer src="./pages__js/produtos.js"></script>
     
-    <title>NFT STORE | Bem-vindo!</title>
+    <title>NFT STORE | Produtos</title>
 </head>
 <body>
 
@@ -47,10 +48,10 @@
             data-aos-easing="ease-in-out"  
             class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-links">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-links" id="nav-produtos">Produtos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-links">Suporte</a></li>
-                    <li class="nav-item"><a href="#" class="nav-links">Sobre-nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-inicio">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-suporte">Suporte</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-sobre">Sobre-nós</a></li>
                 </ul>
             </div>
             <div
@@ -58,7 +59,7 @@
             data-aos-duration="800"
             data-aos-easing="ease-in-out"  
             class="btn">
-                <button id="comprar" class="login">Comprar</button>
+                <button class="login" id="nav-comprar">Comprar</button>
             </div>
 
             <div
@@ -66,114 +67,38 @@
             data-aos-duration="800"
             data-aos-easing="ease-in-out"  
             class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./assets/button/open.svg"></button>
+                <button onclick="menuShow()"><img class="icon" src="../assets/button/open.svg"></button>
             </div>
         </div>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-links">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-links" id="nav-produtos-mb">Produtos</a></li>
-                <li class="nav-item"><a href="#" class="nav-links">Suporte</a></li>
-                <li class="nav-item"><a href="#" class="nav-links">Sobre-nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-inicio-mb">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-links">Produtos</a></li>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-suporte-mb">Suporte</a></li>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-sobre-mb">Sobre-nós</a></li>
             </ul>
     
             <div class="btn-mobile">
-                <button id="comprar-mb" class="signup">Comprar</button>
+                <button id="signup-mb" class="signup">Comprar</button>
             </div>
         </div>
     </nav>
-
-    <main>
-        <div
-        data-aos="fade-up-right"
+    
+    <div
+        data-aos="fade-up"
         data-aos-duration="800"
         data-aos-easing="ease-in-out" 
-        class="left">
-            <h1>Vamos comprar alguns <span>NTFs</span></h1>
-            <p>
-            NTFs são ativos digitais únicos em blockchains, inteligentes 
-            para autenticidade. Amplamente usados em arte e entreterimento, 
-            permitem a monetização de ativos digitais exclusivos.
-            </p>
-            <a href="#">
-                <i class='bx bx-basket'></i>
-                <span>Comprar Agora</span>
-            </a>
-        </div>
-        <img class="img"
-        data-aos="fade-up-left"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out" 
-        src="./assets/logo.png">
-    </main>
-
-    <h2
-    data-aos="fade-up"
-    data-aos-duration="600"
-    data-aos-easing="ease-in-out" 
-    class="separator">
-        Venda seus NFTs
-    </h2>
-
-    <div
-    data-aos="fade-up"
-    data-aos-duration="800"
-    data-aos-easing="ease-in-out" 
-    class="sell-nft">
-        <div class="item">
-            <div class="header">
-                <i class='bx bx-wallet-alt'></i>
-                <h5>Conectar carteira</h5>
-            </div>
-            <p>
-                Conecte sua carteira digital com segurança, Explore e compre NFTs exclusivos em nossa loja usando  Bitcon.
-            </p>
-        </div>
-
-        <div class="item">
-            <div class="header">
-                <i class='bx bx-cart-alt'></i>
-                <h5>Mercado NFT</h5>
-            </div>
-            <p>
-                Explore o emocionante mercado NFT, repleto de itens e coleções exclusivas disponíveis por tempo e estoque limitado.
-            </p>
-        </div>
-
-        <div class="item">
-            <div class="header">
-                <i class='bx bx-grid-alt'></i>
-                <h5>Iniciar APPs</h5>
-            </div>
-            <p>
-                Adquira e desfrute dos principais NFTs disponíveis atualmente com nosso aplicativo de alta qualidade.
-            </p>
-        </div>
-    </div>
-
-    <h2
-    data-aos="fade-up"
-    data-aos-duration="600"
-    data-aos-easing="ease-in-out" 
-    class="separator">
-        NFTs em Alta
-    </h2>
-
-    <div
-    data-aos="fade-up"
-    data-aos-duration="800"
-    data-aos-easing="ease-in-out" 
-    class="nft-shop">
-        <div class="category">
+        class="nft-shopping">
+        <div class="categoria">
             <a href="#">Monkey</a>
             <a href="#">Abstract</a>
             <a href="#">Cars</a>
             <a href="#">Trending</a>
         </div>
-
-        <div class="nft-list">
+    
+        <div class="nft-lista">
             <div class="item">
-                <img src="./assets/nft/nft-1.png">
+                <img src="../assets/nft/nft-1.png">
                 <div class="info">
                     <div>
                         <h5>Party Monkey</h5>
@@ -186,11 +111,11 @@
                 </div>
                 <div class="bid">
                     <p></p>
-                    <a href="#">Comprar</a>
+                    <a href="#" id="c-1">Comprar</a>
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/nft/nft-2.png">
+                <img src="../assets/nft/nft-2.png">
                 <div class="info">
                     <div>
                         <h5>Summer Monkey</h5>
@@ -203,11 +128,11 @@
                 </div>
                 <div class="bid">
                     <p></p>
-                    <a href="#">Comprar</a>
+                    <a href="#" id="c-2">Comprar</a>
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/nft/nft-3.png">
+                <img src="../assets/nft/nft-3.png">
                 <div class="info">
                     <div>
                         <h5>Rainbow Monkey</h5>
@@ -220,11 +145,11 @@
                 </div>
                 <div class="bid">
                     <p></p>
-                    <a href="#">Comprar</a>
+                    <a href="#" id="c-3">Comprar</a>
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/nft/nft-4.png">
+                <img src="../assets/nft/nft-4.png">
                 <div class="info">
                     <div>
                         <h5>Robotic Monkey</h5>
@@ -237,11 +162,11 @@
                 </div>
                 <div class="bid">
                     <p></p>
-                    <a href="#">Comprar</a>
+                    <a href="#" id="c-4">Comprar</a>
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/nft/nft-5.png">
+                <img src="../assets/nft/nft-5.png">
                 <div class="info">
                     <div>
                         <h5>Ounce Monkey</h5>
@@ -254,64 +179,21 @@
                 </div>
                 <div class="bid">
                     <p></p>
-                    <a href="#">Comprar</a>
+                    <a href="#" id="c-5">Comprar</a>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div
-    data-aos="fade-right"
-    data-aos-duration="900"
-    data-aos-easing="ease-in-out" 
-    class="view-more">
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out" 
+        class="ver-mais">
         <button>Ver mais</button>
     </div>
 
-    <h2
-    data-aos="fade-up"
-    data-aos-duration="800"
-    data-aos-easing="ease-in-out" 
-    class="separator">
-        Destaques
-    </h2>
-
-    <div
-    data-aos="fade-up"
-    data-aos-duration="1200"
-    data-aos-easing="ease-in-out" 
-    class="sellers">
-        <div class="item">
-            <img src="./assets/profile/profile-1.jpg">
-            <div class="info">
-                <h4>Nícolas Souza</h4>
-                <p>23.1K</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="./assets/profile/profile-2.jpg">
-            <div class="info">
-                <h4>Lucas Brandão</h4>
-                <p>18.7K</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="./assets/profile/profile-3.jpg">
-            <div class="info">
-                <h4>Vyvi Souza</h4>
-                <p>13.4K</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="./assets/profile/profile-4.png">
-            <div class="info">
-                <h4>Thiago Souza</h4>
-                <p>8.9K</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
+    <div class="footer">
         <h3
         data-aos="fade-up"
         data-aos-duration="2000"
@@ -335,8 +217,8 @@
             </div>
             <p>Copyright © 2024 Nickdev, Todos os direitos reservados.</p>
         </div>
-    </footer>
-    
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <script>

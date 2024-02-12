@@ -26,3 +26,19 @@ function login() {
 }
 
 register();
+
+function adicionarEventoComPrevencao(id, url) {
+    document.getElementById(id).addEventListener("click", function (event) {
+        event.preventDefault();
+        window.open(url, "_blank");
+    });
+}
+
+adicionarEventoComPrevencao("nav-inicio", "../index.html");
+adicionarEventoComPrevencao("nav-inicio-mb", "../index.html");
+adicionarEventoComPrevencao("nav-produtos", "../index__pages/produtos.html");
+adicionarEventoComPrevencao("nav-produtos-mb", "../index__pages/produtos.html");
+adicionarEventoComPrevencao("nav-suporte", "../index__pages/suporte.html");
+adicionarEventoComPrevencao("nav-suporte-mb", "../index__pages/suporte.html");
+adicionarEventoComPrevencao("nav-sobre", "../index__pages/sobre.html");
+adicionarEventoComPrevencao("nav-sobre-mb", "../index__pages/sobre.html");

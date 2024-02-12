@@ -44,24 +44,32 @@ function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/button/open.svg";
+        document.querySelector('.icon').src = "../assets/button/open.svg";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/button/close.svg";
+        document.querySelector('.icon').src = "../assets/button/close.svg";
     }
 }
 
-function adicionarEventoAbrirNovaAba(id, url) {
+var elementos = document.querySelectorAll('[id^="c-"]');
+elementos.forEach(function(elemento) {
+    elemento.addEventListener('click', function() {
+        window.open("../index__pages/comprar.html", "_blank");
+    });
+});
+
+
+function adicionarEvento(id, url) {
     document.getElementById(id).addEventListener("click", function () {
         window.open(url, "_blank");
     });
 }
 
-adicionarEventoAbrirNovaAba("comprar", "./index__pages/comprar.html");
-adicionarEventoAbrirNovaAba("comprar-mb", "./index__pages/comprar.html");
-adicionarEventoAbrirNovaAba("nav-produtos", "./index__pages/produtos.html");
-adicionarEventoAbrirNovaAba("nav-produtos-mb", "./index__pages/produtos.html");
-
-
-
-
+adicionarEvento("nav-inicio", "../index.html");
+adicionarEvento("nav-inicio-mb", "../index.html");
+adicionarEvento("nav-suporte", "../index__pages/suporte.html");
+adicionarEvento("nav-suporte-mb", "../index__pages/suporte.html");
+adicionarEvento("nav-sobre", "../index__pages/sobre.html");
+adicionarEvento("nav-sobre-mb", "../index__pages/sobre.html");
+adicionarEvento("nav-comprar", "../index__pages/comprar.html");
+adicionarEvento("signup-mb", "../index__pages/comprar.html");
