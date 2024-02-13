@@ -15,9 +15,16 @@
     --footer-letter: #989898;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .section {
     width: 100%;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 
 .section-container {
@@ -44,61 +51,60 @@
 
 .content-section .title {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 28px;
 }
 
 .content-section .content h3 {
     margin-top: 20px;
-    color: var(--black);
+    color: #5d5d5d;
     font-size: 21px;
 }
 
 .content-section .content p {
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
     line-height: 1.5;
 }
 
 .content-section .content .button {
     margin-top: 30px;
-
 }
 
 .content-section .content .button a {
-    background: var(--blue);
-    border-radius: 10px;
+    background: #3d3d3d;
     padding: 12px 40px;
     text-decoration: none;
-    color: var(--white);
-    font-size: 18px;
+    color: #fff;
+    font-size: 25px;
     letter-spacing: 1.5px;
-    transition: color 0.3s ease;
+    transition: all 0.3s;
 }
 
 .content-section .content .button a:hover {
-    background: var(--light-blue);
-    color: var(--white);
+    background: var(--blue);
+    color: #fff;
 }
 
 .content-section .social {
-    margin: -25px 200px;
+    margin: 40px 15px;
 }
 
 .content-section .social i {
-    color: var(--blue);
+    color: var(--black);
     font-size: 30px;
     padding: 0px 10px;
     transition: all 0.3s;
 }
 
 .content-section .social i:hover {
+    color: var(--blue);
     transform: translateY(-5px);
-    color: var(--light-blue);
 }
 
 .footer {
     position: absolute;
-    transform: translateY(550px);
+    margin-top: 100px;
     background: var(--black);
     color: var(--white);
     padding: 100px 80px;
@@ -151,29 +157,34 @@
 @media screen and (max-width: 768px) {
 
     .section-container {
-        padding: 0 40px;
-        margin-top: 50px;
-        width: 100%;
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
     }
 
     .content-section {
-        width: 70%;
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section {
+        float: none;
+        width: 100%;
     }
 
     .image-section img {
-        display: none;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
     }
 
     .content-section .title {
-        font-size: 14px;
-    }
-
-    .content-section .content h3 {
-        font-size: 14px;
-    }
-
-    .content-section .content p {
-        font-size: 14px;
+        text-align: center;
+        font-size: 19px;
     }
 
     .content-section .content .button {
@@ -182,17 +193,16 @@
 
     .content-section .content .button a {
         padding: 9px 30px;
-        font-size: 14px;
     }
 
     .content-section .social {
-        display: none;
+        text-align: center;
     }
 
     .footer {
         padding: 0 40px;
         flex-direction: column;
-        transform: translateY(550px);
+        margin-top: 50px;
     }
 
     .footer h3 {
@@ -216,5 +226,4 @@
     .footer .right .social i {
         margin: 0 10px;
     }
-
 }
