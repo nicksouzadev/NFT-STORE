@@ -57,7 +57,8 @@ main .left a span {
 
 main img {
     width: 600px;
-    margin-top: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 
