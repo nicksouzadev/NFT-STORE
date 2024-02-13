@@ -51,12 +51,21 @@ function menuShow() {
     }
 }
 
+var elementos = document.querySelectorAll('[id^="c-"]');
+elementos.forEach(function(elemento) {
+    elemento.addEventListener('click', function() {
+        window.open("./index__pages/comprar.html", "_blank");
+    });
+});
+
 function adicionarEventoAbrirNovaAba(id, url) {
     document.getElementById(id).addEventListener("click", function () {
         window.location.href = url;
     });
 }
 
+adicionarEventoAbrirNovaAba("ver-mais", "./index__pages/produtos.html");
+adicionarEventoAbrirNovaAba("comprar-agora", "./index__pages/comprar.html");
 adicionarEventoAbrirNovaAba("comprar", "./index__pages/comprar.html");
 adicionarEventoAbrirNovaAba("comprar-mb", "./index__pages/comprar.html");
 adicionarEventoAbrirNovaAba("nav-produtos", "./index__pages/produtos.html");

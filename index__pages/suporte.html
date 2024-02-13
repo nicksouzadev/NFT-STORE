@@ -1,12 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <!-- fav icon na tela superior do site -->
+    <link rel="icon" type="image/png" href="../assets/fav-icon.png">
+
+    <!-- conectando a fonte com o google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- importando a estilização do site -->
+    <link rel="stylesheet" href="../index__style/global.css">
+    <link rel="stylesheet" href="./pages__style/suporte.css">
+
+    <!-- conectando às bibliotecas -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- importando o javascript -->
+    <script defer src="./pages__js/suporte.js"></script>
+    
+    <title>NFT STORE | Suporte</title>
 </head>
 <body>
-    <h2>SUPORTE</h2>
+
+    <!-- TOPO -->
+    <header class="container">
+        <marquee>Novos <span class="nft">NTFs</span> adicionados ao nosso <span class="nft">CATÁLOGO</span>!!!</marquee>
+    </header>
     
+    <nav>
+        <div class="nav-bar">
+            <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"  
+            class="logo">
+                <h1><span>&capbrcup;</span> NFT STORE <span>&capbrcup;</span></h1>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"  
+            class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-inicio">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-produtos">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Suporte</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links" id="nav-sobre">Sobre-nós</a></li>
+                </ul>
+            </div>
+            <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"  
+            class="btn">
+                <button class="login" id="nav-comprar">Comprar</button>
+            </div>
+
+            <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"  
+            class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../assets/button/open.svg"></button>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-inicio-mb">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-produtos-mb">Produtos</a></li>
+                <li class="nav-item"><a href="#" class="nav-links">Suporte</a></li>
+                <li class="nav-item"><a href="#" class="nav-links" id="nav-sobre-mb">Sobre-nós</a></li>
+            </ul>
+    
+            <div class="btn-mobile">
+                <button id="signup-mb" class="signup">Comprar</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out" 
+        class="content">
+            <h2>Entre em contato conosco</h2>
+            <p>Para qualquer dúvida, sugestão ou solicitação, não hesite em entrar em contato
+               conosco. Estamos à disposiçao para ajudá-lo da melhor maneira possível. Agurdamos o seu contato!.</p>
+        </div>
+        <div class="containerInfo">
+            <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out" 
+            class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class='bx bx-map'></i></div>
+                        <div class="text">
+                            <h3>Endereço</h3>
+                            <p>NFT STORE Company,<br>Av. Das Nações Unidas, <br>Jurubatuba, São Paulo - SP<br>2040</p>
+                        </div>
+                    </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bxs-phone'></i></div>
+                        <div class="text">
+                            <h3>Telefone</h3>
+                            <p>(+55) (11) 98080-8080</p>
+                        </div>
+                    </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bx-envelope'></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>suporte@nft-store.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out" 
+                class="contactForm">
+                    <form>
+                        <h2>Enviar Mensagem</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Nome completo</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Sua Mensagem...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footer">
+        <h3
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+        >Crie, explore e colete NFTs exclusivos</h3>
+        <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" 
+        class="right">
+            <div class="links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Coperação</a>
+                <a href="#">Patrocínio</a>
+                <a href="#">Contate-nos</a>
+            </div>
+            <div class="social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-github'></i>
+            </div>
+            <p>Copyright © 2024 Nickdev, Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true })
+    </script>
 </body>
 </html>
