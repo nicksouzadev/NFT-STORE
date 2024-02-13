@@ -53,7 +53,7 @@ function menuShow() {
 
 function adicionarEventoAbrirNovaAba(id, url) {
     document.getElementById(id).addEventListener("click", function () {
-        window.open(url, "_blank");
+        window.location.href = url;
     });
 }
 
@@ -61,6 +61,10 @@ adicionarEventoAbrirNovaAba("comprar", "./index__pages/comprar.html");
 adicionarEventoAbrirNovaAba("comprar-mb", "./index__pages/comprar.html");
 adicionarEventoAbrirNovaAba("nav-produtos", "./index__pages/produtos.html");
 adicionarEventoAbrirNovaAba("nav-produtos-mb", "./index__pages/produtos.html");
+adicionarEventoAbrirNovaAba("nav-suporte", "./index__pages/suporte.html");
+adicionarEventoAbrirNovaAba("nav-suporte-mb", "./index__pages/suporte.html");
+adicionarEventoAbrirNovaAba("nav-sobre", "./index__pages/sobre.html");
+adicionarEventoAbrirNovaAba("nav-sobre-mb", "./index__pages/sobre.html");
 
 
 

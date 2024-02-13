@@ -61,7 +61,7 @@ elementos.forEach(function(elemento) {
 
 function adicionarEvento(id, url) {
     document.getElementById(id).addEventListener("click", function () {
-        window.open(url, "_blank");
+        window.location.href = url;
     });
 }
 

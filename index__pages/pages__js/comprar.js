@@ -30,7 +30,7 @@ register();
 function adicionarEventoComPrevencao(id, url) {
     document.getElementById(id).addEventListener("click", function (event) {
         event.preventDefault();
-        window.open(url, "_blank");
+        window.location.href = url;
     });
 }
 
