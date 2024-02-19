@@ -10,6 +10,8 @@
 
 Este projeto tem caráter comu-educacional e tem como objetivo principal o aprimoramento das minhas habilidades em HTML e CSS. 
 
+Testar Site: [AQUI](https://nickdev-nft-store.netlify.app/)
+
 ## 🚀 Tecnologias
 
 - HTML
